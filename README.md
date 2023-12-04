@@ -1,1 +1,2 @@
-# House-Sales-in-King-County-USA
+# House Sales in King County,USA
+In this project, my focus will be on constructing predictive models aimed at forecasting house prices in King Country, USA based on available data. The ultimate goal is to develop robust models that contribute to a comprehensive understanding of the factors influencing house prices, facilitating more accurate predictions. I will also conduct a thorough analysis of the dataset, delving into its intricacies to extract meaningful patterns and trends. Subsequently, I will create visualizations. These visual aids will serve as powerful tools in elucidating complex relationships within the data, fostering a deeper understanding of the factors influencing house prices. 
