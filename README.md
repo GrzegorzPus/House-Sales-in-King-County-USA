@@ -50,7 +50,7 @@ This project involves building and comparing various machine learning models to 
 ---
 <br>
 
-## 📈 Project 2: [Machine Learning Model Comparison for House Price Prediction](https://github.com/GrzegorzPus/House-Sales-in-King-County-USA/blob/main/House%20Sales%20-%20Data%20Exploration.ipynb)
+## 📈 Project 2: [Exploratory Data Analysis (EDA) of House Sales in King County, USA](https://github.com/GrzegorzPus/House-Sales-in-King-County-USA/blob/main/House%20Sales%20-%20Data%20Exploration.ipynb)
 
 This project involves performing a comprehensive exploratory data analysis (EDA) of the house sales data in King County, USA. The goal of this analysis is to understand the data, identify key trends and patterns, and derive insights that can inform further modeling and decision-making. The analysis includes the following steps:
 
@@ -113,4 +113,4 @@ Thank you for visiting my repository!
 
 ---
 
-#Python #DataAnalysis #MachineLearning #LinearRegression
+#Python #DataAnalysis #MachineLearning #LinearRegression #EDA #Visualization
