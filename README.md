@@ -103,6 +103,62 @@ This project involves performing a comprehensive exploratory data analysis (EDA)
 ---
 <br>
 
+## 📈 Project 3: [Predict Housing Prices - Linear Regression Models](https://github.com/GrzegorzPus/House-Sales-in-King-County-USA/blob/main/Predict%20Housing%20Prices%20-%20Linear%20Regression%20Models.ipynb)
+
+In this project, we focus on building linear regression models to predict house prices in King County, USA. I created a script that estimates models based on the number of variables and shows the Mean Squared Error (MSE) and R-squared for each model. The analysis includes the following steps:
+
+1. **Model Building**:
+   - Built multiple linear regression models using different numbers of variables to understand the impact of feature selection on model performance.
+
+2. **Model Evaluation**:
+   - Evaluated the models using MSE and R^2 to determine the effectiveness of each model.
+
+3. **Creation an Algorithm**:
+   - Created a script that estimates models based on the number of variables and shows the Mean Squared Error (MSE) and R-squared (R^2) for each model.
+<br>
+
+### 📊 Example Visualization
+
+![image](https://github.com/user-attachments/assets/49caff82-b25b-40ab-be4b-0f742b1dfa2d)
+*Comparison models*
+<br>
+<br>
+
+   ### 🔑 Key Findings
+   Some of the key determinants analyzed include:
+   - **Model Performance**: Showed that linear regression model is not the best solution for predicting prices.
+   - **Optimal Features**: Identified the optimal number of features that balance complexity and model performance.
+<br>
+
+   ### 🛠️ Technologies
+   - **Programming Languages**: Python
+  - **Python**: `pandas`  `numpy` `matplotlib` `seaborn` `statsmodels` `sklearn`
+<br>
+
+  ### 👨‍💻 Algorithm
+   ```python
+   num_features = range(1, X.shape[1] + 1)
+   scores = []
+
+   for n_features in num_features:
+       model = LinearRegression()
+       rfe = RFE(model, n_features_to_select=n_features)
+       rfe.fit(X_train, y_train)
+    
+       X_train_rfe = rfe.transform(X_train)
+       X_test_rfe = rfe.transform(X_test)
+    
+       model.fit(X_train_rfe, y_train)
+    
+       y_pred = model.predict(X_test_rfe)
+       mse = mean_squared_error(y_test, y_pred)
+       r2 = r2_score(y_test, y_pred)
+
+       scores.append((n_features, mse, r2))
+   ```
+---
+<br>
+
 ## 👥 Contact
 
 If you have any questions about the projects or would like to discuss potential collaborations, feel free to reach out:
